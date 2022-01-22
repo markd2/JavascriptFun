@@ -5,12 +5,22 @@ Yay new editor and environment.
 # Useful keybindings
 
 * control-shift-backtick - open terminal in same directory as current file.
+* command-option left/right - move through files in tab bar
+    * control 1, control 2, etc to switch between tabs
+* Split editor - command-backslash (vertically), command-K command-backslash horizontally
+    - but doesn't work well.  Non-obvious (I can't figure it out) how to easily switch that editor to another file
+
 
 # Broken things I need to fix
 
+* Can't center current line in editor.
+    - not a feature.  huh.  There exists an extension - https://marketplace.visualstudio.com/items?itemName=kaiwood.center-editor-window
 
 # Things that drive me nuts
 
+* ~don't seem to see an equivalent for Quick Open~ - command-P is close enough
+    - command-option/left/right somewhat useful
+    - control-tab is pretty worthless - can't type to get to a file. either have to mouse (I want to be able to do the bulk of my work totally mouse free) or use a number to go to a particular tab
 * definitely an editor for the ADD generation. So *much* grahicial activity everywhere.
 
 * ~The box around the current line. I feel crowded.~  editor.renderLineHighlight to none
@@ -30,8 +40,15 @@ Yay new editor and environment.
     - I am not alone - https://stackoverflow.com/questions/42042369/how-to-disable-blue-notification-badges-on-vs-code
     - someone mentioned "Zen Mode" _You would enjoy the Zen Mode of VS Code_
         - oh. Just full-screen
-* highlighting the word the cursor is next to. What is the point?
+* ~highlighting the word the cursor is next to. What is the point?~
     - Looks like default behavior if there's otherwise no other language support: https://github.com/Microsoft/vscode/issues/5351
     - moved to https://github.com/microsoft/vscode/issues/24426
     - editor.occurrencesHighlight - set to false
-* It auto highlights 
+* ~It auto highlights *everywhere* when I make a selection.~ - editor.selectionHighlight
+* omg the autocomplete is aggressive.
+    - Editor quick suggestions delay.  cranked it up to 10 seconds
+    - "editor.quickSuggestions": { "other": false, "comments": false, "strings": false },
+    - but still showing up
+* has control-K, but not yank :-(
+* The aggressive error squiggles are stress-inducing
+* ~The aggressive hover stuff is stress-inducing~ - editor.hover.delay

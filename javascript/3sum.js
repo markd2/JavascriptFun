@@ -39,7 +39,7 @@ var nums = function(count) {
     return nums
 }
 
-let numsToSum = nums(15000)
+//let numsToSum = nums(15000)
 numsToSum = [-1,0,1,2,-1,-4]
 let sums = threeSum(numsToSum)
 console.log(numsToSum)

@@ -33,7 +33,7 @@ Yay new editor and environment.
 * Has some emacs bindings, but not meta-key support (for moving )
 * Minimap
 * Wow - TINY slop on left side for selecting lines.  I keep hitting the collapse bar which I don't typically use
-* The left vertical lines for indentation I don't think I need
+* The left vertical lines for indentation I don't think I need.  editor.indent
 * ~The "one pending change" badge for source code - I know I have pending changes because I'm working.~
     - Just hid the badge (right-click) since I do all my gitstuff outside of the editor
 * The "dirty files" badge.  Im fine with the badge on the tab, but I don't need to know and have a stress-inducing badge telling me about it.
@@ -52,3 +52,9 @@ Yay new editor and environment.
 * has control-K, but not yank :-(
 * The aggressive error squiggles are stress-inducing
 * ~The aggressive hover stuff is stress-inducing~ - editor.hover.delay
+* Turn off all syntax highlighting with
+```
+"files.associations": {
+    "*.*": "plaintext",
+},
+```

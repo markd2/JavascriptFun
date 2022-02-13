@@ -10,6 +10,8 @@ Yay new editor and environment.
 * Split editor - command-backslash (vertically), command-K command-backslash horizontally
     - but doesn't work well.  Non-obvious (I can't figure it out) how to easily switch that editor to another file
 * control-space - Show completions
+* control-backtick - go to terminal / return to editor and close terminal
+    - not a true "go back to editor" that I could find, so control-1/2 would be it
 
 
 # Broken things I need to fix
